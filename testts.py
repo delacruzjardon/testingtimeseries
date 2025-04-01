@@ -6,7 +6,7 @@ from datetime import datetime, timezone, timedelta
 from bson.objectid import ObjectId
 
 # Connect to MongoDB
-client = MongoClient("mongodb+srv://admin:xxxx@xxx.xxxx.mongodb.net/?retryWrites=true&w=majority&appName=xxxxx")
+client = MongoClient("mongodb://localhost")
 db = client['performanceDB']
 client.drop_database('performanceDB') 
 
